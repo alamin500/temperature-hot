@@ -1,3 +1,4 @@
+// api key 
 const API_KEY = `46ad7457603b9b0104e633e78cd60e16`;
 const searchTemperature = () => {
     const city = document.getElementById('city-name').value;
@@ -12,7 +13,7 @@ const searchTemperature = () => {
 const setInnerText = (id, text) => {
     document.getElementById(id).innerText = text;
 }
-
+// display temperature 
 const displayTemperature = temperature => {
     console.log(temperature)
     setInnerText('city', temperature.name);
